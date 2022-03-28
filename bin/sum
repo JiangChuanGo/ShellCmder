@@ -1,0 +1,17 @@
+#!/bin/env python
+
+import sys
+
+argv = sys.argv
+argc = len(sys.argv) - 1
+
+if argc <= 0:
+	print("need 1 arg at least.")
+	exit(1)
+
+sum = 0
+
+for num in argv[1:]:
+	sum += int(num)
+
+print(sum)
